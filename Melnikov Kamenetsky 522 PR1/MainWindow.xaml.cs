@@ -24,5 +24,10 @@ namespace Melnikov_Kamenetsky_522_PR1
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
