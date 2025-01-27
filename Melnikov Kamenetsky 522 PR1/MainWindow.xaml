@@ -5,9 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Melnikov_Kamenetsky_522_PR1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="500"
+        Closing="Window_Closing">
+    
     <Grid>
-        <Button Content="Кнопка" HorizontalAlignment="Left" Margin="411,256,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-
+        <Image Height="83" Margin="56,17,56,0" VerticalAlignment="Top"
+        Source="C:\Users\improtagon1st\source\repos\Melnikov Kamenetsky 522 PR1\Melnikov Kamenetsky 522 PR1\image\image_1.jpg" ToolTip="Это функция"/>
+        <TextBox Name="InputX" HorizontalAlignment="Left" Margin="59,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" ToolTip="Введите данные"/>
+        <TextBox Name="InputM" HorizontalAlignment="Left" Margin="59,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" ToolTip="Введите данные"/>
+        <RadioButton Name="RadioSh" Content="sh(x)" HorizontalAlignment="Left" Margin="59,210,0,0" VerticalAlignment="Top" ToolTip="Кнопка-переключатель для выбора функции" />
+        <RadioButton Name="RadioX2" Content="x^2" HorizontalAlignment="Left" Margin="59,240,0,0" VerticalAlignment="Top" ToolTip="Кнопка-переключатель для выбора функции"/>
+        <RadioButton Name="RadioExp" Content="e^x" HorizontalAlignment="Left" Margin="59,270,0,0" VerticalAlignment="Top" ToolTip="Кнопка-переключатель для выбора функции"/>
+        <TextBox Name="ResultTextBox" HorizontalAlignment="Left" Margin="59,300,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True" ToolTip="Здесь появится ответ после нажатия кнопки вычислить"  TextChanged="ResultTextBox_TextChanged"  />
+        <Button Name="CalculateButton" Content="Вычислить" HorizontalAlignment="Left" Margin="240,201,0,0" VerticalAlignment="Top" Height="38" Width="130" ToolTip="Нажмите кнопку для вычисления" Click="CalculateButton_Click"/>
+        <Button Content="Очистить" HorizontalAlignment="Left" Margin="240,270,0,0" VerticalAlignment="Top" Height="38" Width="130" ToolTip="Нажмите кнопку для очистки" Click="Button_Clear"/>
+        <Label Content="x" HorizontalAlignment="Left" Margin="23,131,0,0" VerticalAlignment="Top"/>
+        <Label Content="m" HorizontalAlignment="Left" Margin="20,171,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ответ" HorizontalAlignment="Left" Margin="10,296,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
